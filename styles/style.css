@@ -1,0 +1,29 @@
+h1{
+    text-align: center;
+    font-size: 60px;
+    margin:0;
+    padding:20px 0;
+    color:#f00;
+    text-shadow: 6px 6px 10px black;
+}
+img{
+    height: 100px;
+    width: 100px;
+    display: block;
+    margin:0 auto;
+}
+p,li{
+    font-size: 16px;
+    line-height: 3;
+    letter-spacing: 3px;
+}
+html{
+    background-color:#daf;
+}
+body{
+    border:5px solid #f00;
+    width: 600px;
+    margin:0 auto;
+    padding:0 20px 20px 20px;
+    background-color:#ffaaff;
+}
