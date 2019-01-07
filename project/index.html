@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>一个页面布局的简单布局</title>
+    <link rel="shortcut icon" href="../images/firefox-icon.png">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css"> -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <!-- the below three lines are a fix to get HTML5 semantic elements working in old versions of Internet Explorer-->
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <style type="text/css">
+        body{
+            background-color: #a9a9a9;
+        }
+        header{
+            height:100px;
+            margin: 10px 0 -50px 0;
+        }
+        h1{
+            text-align: center;
+            color:#ffffff;
+        }
+        nav{
+            width: 1200px;
+            height: 80px;
+            background-color: #ff80ff;
+            margin:10px auto;
+            position: relative;
+        }
+        nav ul{
+            float: left;
+            overflow: hidden;
+            width: 840px;
+            height: 50px;
+            margin: 0;
+            position:absolute;
+            top:50%;
+            margin-top: -25px;
+            padding: 0px;
+        }
+        nav form{
+            float: left;
+            position:absolute;
+            right: 50px;
+            top:50%;
+            margin-top:-11px;
+        }
+        nav li{
+            display:inline-block;
+            height: 50px;
+            width: 200px;
+            margin:0;
+            line-height: 50px;
+        }
+        nav li a{
+            display:block;
+            text-decoration: none;  
+            text-align: center;
+            margin: 0 auto;
+            font-size: 22px;
+        }
+        nav form input:last-child{
+            background-color: black;
+            border: none;
+            color: #fff;
+            display: inline-block;
+            width: 52px;
+            height: 20px;
+            vertical-align: middle;
+        }
+        main{
+            height: 800px;
+            width:1200px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        article{
+          background-color: #fff;
+          height: 100%;
+          width: 800px;
+          float: left;
+        }
+        article h2{
+          text-align: center;
+          font-size: 30px;
+        }
+        article p{
+          margin:15px;
+        }
+        article h3{
+          margin:15px;
+          font-size: 25px;
+        }
+        aside{
+          background-color: #ff80ff;
+          float: left;
+          width: 390px;
+          height: 100%;
+          margin-left: 10px;
+        }
+        aside h2{
+          text-align: center;
+          font-size: 30px;
+          letter-spacing: 3px;
+        }
+        aside ul li{
+          margin: 30px 20px;
+        }
+        footer{
+          width: 1200px;
+          background-color: #fff;
+          height: 80px;
+          margin:0 auto;
+          margin-top:15px;
+          display: table;
+        }
+        footer p{
+          display: table-cell;
+          vertical-align: middle;
+          text-indent: 10px;
+        }
+    </style>
+  </head>
+
+  <body>
+    <!-- Here is our main header that is used accross all the pages of our website -->
+
+    <header>
+      <h1>Header</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Our team</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+
+       <!-- A Search form is another commmon non-linear way to navigate through a website. -->
+
+       <form>
+         <input type="search" name="q" placeholder="Search query">
+         <input type="submit" value="Go!">
+       </form>
+     </nav>
+
+    <!-- Here is our page's main content -->
+    <main>
+
+      <!-- It contains an article -->
+      <article>
+        <h2>Article heading</h2>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Donec a diam lectus. Set sit amet ipsum mauris. Maecenas congue ligula as quam viverra nec consectetur ant hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur.</p>
+
+        <h3>subsection</h3>
+
+        <p>Donec ut librero sed accu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor.</p>
+
+        <p>Pelientesque auctor nisi id magna consequat sagittis. Curabitur dapibus, enim sit amet elit pharetra tincidunt feugiat nist imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros.</p>
+
+        <h3>Another subsection</h3>
+
+        <p>Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum soclis natoque penatibus et manis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.</p>
+
+        <p>Vivamus fermentum semper porta. Nunc diam velit, adipscing ut tristique vitae sagittis vel odio. Maecenas convallis ullamcorper ultricied. Curabitur ornare, ligula semper consectetur sagittis, nisi diam iaculis velit, is fringille sem nunc vet mi.</p>
+      </article>
+
+      <!-- the aside content can also be nested within the main content -->
+      <aside>
+        <h2>Related</h2>
+
+        <ul>
+          <li><a href="#">Oh I do like to be beside the seaside</a></li>
+          <li><a href="#">Oh I do like to be beside the sea</a></li>
+          <li><a href="#">Although in the North of England</a></li>
+          <li><a href="#">It never stops raining</a></li>
+          <li><a href="#">Oh well...</a></li>
+        </ul>
+      </aside>
+
+    </main>
+
+    <!-- And here is our main footer that is used across all the pages of our website -->
+
+    <footer>
+      <p>©Copyright 2050 by nobody. All rights reversed.</p>
+    </footer>
+
+  </body>
+</html>
